@@ -1,0 +1,91 @@
+
+body {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2; /* Asegurar que el video esté detrás del contenido */
+}
+  
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+    h1, h2, h3 {
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      padding: 1rem 0;
+    }
+    
+    
+    header {
+      background: linear-gradient(40deg, #47689264,#0d1eb95a);
+      text-align: center;
+      padding: 1rem 0;
+    }
+
+  
+  p{
+    text-align: center;
+  }
+  button{
+
+text-align: center;
+width: 150px;
+height: 50px;
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+.contenido-principal {
+ background-color: #ebc390;
+ font-weight: bold;
+ color: black; 
+ text-shadow: 4px 4px 8px rgba(0,0,0,0.5);
+ font-size: 18px;
+ border: 2px solid black;
+ border-radius: 5px;
+ float: left;
+ width: 1070px
+
+}
+
+
+.recuadro-derecha {
+   float: right;
+   font-size: 14px;
+   background: linear-gradient(50deg, #ffffff,#ff0000);
+   padding: 10px;
+   animation: entrada 1s ease-in-out;
+   border: 1px solid #ddd;
+   width: 250px;
+   box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
+ }
+
+ 
+ @keyframes entrada {
+   from {
+     opacity: 0;
+     transform: translateX(100px);
+   }
+   to {
+     opacity: 1;
+     transform: translateX(0);
+   }
+ }
+ 
+ .recuadro-derecha:hover {
+   box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.7);
+ }
